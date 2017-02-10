@@ -14,6 +14,7 @@ apply plugin: "kotlin"
 apply plugin: "application"
 
 mainClassName = "net.nexcius.elo.MainKt"
+applicationName = "EloBot"
 
 sourceSets {
     main.kotlin.srcDirs += 'src/main/kotlin'
@@ -21,7 +22,13 @@ sourceSets {
 }
 repositories {
     mavenCentral()
+    maven { url 'https://jitpack.io' }
 }
 dependencies {
     compile "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
+    compile "com.ullink.slack:simpleslackapi:0.6.0"
+    compile "redis.clients:jedis:2.9.0"
+    compile "com.natpryce:konfig:1.4.2.0"
 }
+
+task stage(dependsOn: ['clean', 'installApp'])
