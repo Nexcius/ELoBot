@@ -19,32 +19,25 @@ fun main(args: Array<String>) {
 */
 
 
-    val config = systemProperties() overriding
-            EnvironmentVariables() overriding
-            ConfigurationProperties.fromResource("defaults.properties")
-
-    val v = config[Key("test.val", intType)]
-    println(v)
-
-
     // TODO: Add config
 
-    val API_KEY = "..."
-    val session = SlackSessionFactory.createWebSocketSlackSession(API_KEY)
+
+    val session = SlackSessionFactory.createWebSocketSlackSession(Configuration.SLACK_API_KEY)
 
     session.connect()
 
 
-    val x = Jedis("asd")
+    val x = Jedis(Configuration.REDIS_HOST)
+
 
 
     println("Connected")
-    session.joinChannel("spt-osl-fussball")
+    session.joinChannel(Configuration.SLACK_CHANNEL)
     println("JOINED")
 
     session.addMessagePostedListener({ slackMessagePosted, slackSession ->
         slackMessagePosted.channel.let { channel ->
-            if(channel.name != "spt-osl-fussball"
+            if(channel.name != Configuration.SLACK_CHANNEL
                     || slackMessagePosted.sender.isBot
                     || !slackMessagePosted.messageContent.startsWith("elo", true)) {
                 return@addMessagePostedListener
@@ -56,7 +49,7 @@ fun main(args: Array<String>) {
     })
 
 
-    val channel = session.findChannelByName("spt-osl-fussball")
+    val channel = session.findChannelByName(Configuration.SLACK_CHANNEL)
     channel.let { ch ->
         session.sendMessage(ch, "Hey!!!")
         session.sendMessage(ch, "MOAHAHA")
