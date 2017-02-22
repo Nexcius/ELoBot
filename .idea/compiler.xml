@@ -19,6 +19,8 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="Elo_main" target="1.8" />
+      <module name="Elo_test" target="1.8" />
       <module name="EloBot_main" target="1.8" />
       <module name="EloBot_test" target="1.8" />
     </bytecodeTargetLevel>

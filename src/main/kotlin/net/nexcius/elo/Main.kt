@@ -1,12 +1,14 @@
 package net.nexcius.elo
 
-import com.natpryce.konfig.*
-import com.natpryce.konfig.ConfigurationProperties.Companion.systemProperties
-import com.ullink.slack.simpleslackapi.impl.SlackSessionFactory
-import redis.clients.jedis.Jedis
-import java.io.File
 
 fun main(args: Array<String>) {
+    println("Hello!")
+}
+
+/*fun main(args: Array<String>) {
+
+    println("Hey there!")
+
 /*    val f = EloRating()
     f.register(listOf("Player1"), listOf("Player2"), EloRating.Companion.Result.TEAM_ONE_WIN)
     f.register(listOf("Player1"), listOf("Player2"), EloRating.Companion.Result.TEAM_ONE_WIN)
@@ -21,13 +23,16 @@ fun main(args: Array<String>) {
 
     // TODO: Add config
 
+    //Database.connect(Configuration.POSTGRES_HOST, driver = "org.h2.Driver")
 
+/*
     val session = SlackSessionFactory.createWebSocketSlackSession(Configuration.SLACK_API_KEY)
+
 
     session.connect()
 
 
-    val x = Jedis(Configuration.REDIS_HOST)
+    //val x = Jedis(Configuration.REDIS_HOST)
 
 
 
@@ -60,4 +65,6 @@ fun main(args: Array<String>) {
     readLine()
 
     session.disconnect()
+    */
 }
+*/

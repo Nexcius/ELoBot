@@ -13,7 +13,7 @@ object Configuration {
     val SLACK_API_KEY = config[Key("slack.apikey", stringType)]
     val SLACK_CHANNEL = config[Key("slack.channel", stringType)]
 
-    val REDIS_HOST = config[Key("redis.host", stringType)]
+    val POSTGRES_HOST = config[Key("postgres.host", stringType)]
 
     val DEFAULT_RATING = 1400
 

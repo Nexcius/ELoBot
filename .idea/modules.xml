@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/EloBot.iml" filepath="$PROJECT_DIR$/.idea/modules/EloBot.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/EloBot_main.iml" filepath="$PROJECT_DIR$/.idea/modules/EloBot_main.iml" group="EloBot" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/EloBot_test.iml" filepath="$PROJECT_DIR$/.idea/modules/EloBot_test.iml" group="EloBot" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Elo.iml" filepath="$PROJECT_DIR$/.idea/modules/Elo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Elo_main.iml" filepath="$PROJECT_DIR$/.idea/modules/Elo_main.iml" group="Elo" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Elo_test.iml" filepath="$PROJECT_DIR$/.idea/modules/Elo_test.iml" group="Elo" />
     </modules>
   </component>
 </project>

@@ -1,1 +1,1 @@
-web: ./build/install/app/bin/app
+app: java -jar build/libs/Elo-all.jar

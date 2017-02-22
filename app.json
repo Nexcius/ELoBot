@@ -1,0 +1,7 @@
+{
+  "name": "EloBot 3000",
+  "description": "An Elo bot with Slack integration",
+  "repository": "https://github.com/Nexcius/EloBot",
+  "keywords": ["kotlin", "bot", "elo"],
+  "addons": [ "heroku-postgresql" ]
+}
