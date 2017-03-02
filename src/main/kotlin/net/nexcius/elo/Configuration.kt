@@ -17,4 +17,6 @@ object Configuration {
 
     val DEFAULT_RATING = 1400
 
+    val BOT_NAME = "ELO"
+
 }

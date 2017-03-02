@@ -3,6 +3,7 @@ package net.nexcius.elo
 
 fun main(args: Array<String>) {
     println("Hello!")
+
 }
 
 /*fun main(args: Array<String>) {
